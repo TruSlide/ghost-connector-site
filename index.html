@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lightwright: loadout builder for Destiny 2</title>
+  <meta name="description" content="Lightwright is an unofficial Claude connector that builds Destiny 2 loadouts from the gear you own.">
+  <style>
+    :root { --bg:#f7f6f2; --fg:#1d1d1b; --muted:#5b5b55; --accent:#3d6b8e; }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg:#141517; --fg:#ececea; --muted:#a7a7a0; --accent:#8fb8d6; }
+    }
+    body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.6 system-ui, sans-serif; }
+    main { max-width:44rem; margin:0 auto; padding:2.5rem 1rem; }
+    h1 { font-size:2rem; margin:0 0 .25rem; }
+    h2 { font-size:1.2rem; margin-top:2rem; }
+    .tag { color:var(--muted); margin:0 0 1.5rem; }
+    a { color:var(--accent); }
+    .note { color:var(--muted); font-size:.9rem; border-top:1px solid #8884; padding-top:1rem; margin-top:2.5rem; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Lightwright</h1>
+  <p class="tag">A Claude connector that builds Destiny 2 loadouts from the gear you already own.</p>
+
+  <p><strong>Status:</strong> in development. It is not released yet.</p>
+
+  <h2>What it will do</h2>
+  <ul>
+    <li>Ask Claude for a loadout for an activity and playstyle, such as "Voidwalker, Devour and grenade explosions, for a raid."</li>
+    <li>Propose a loadout from items you own, with exact stat totals from the game's data.</li>
+    <li>List any missing items and where they come from.</li>
+    <li>Move items between characters and the vault, pull from the postmaster, and equip gear or a full loadout, after you approve each change.</li>
+  </ul>
+
+  <h2>How your data is handled</h2>
+  <ul>
+    <li>You sign in with your own Bungie account. Lightwright never sees your password.</li>
+    <li>Access tokens are stored on your own computer, not on a server run by this project.</li>
+    <li>Nothing changes in your account until you confirm it. Every change shows a preview first and is logged locally.</li>
+    <li>Nothing is deleted or sold.</li>
+  </ul>
+
+  <h2>Unofficial</h2>
+  <p>Lightwright is an independent fan project. It is not made, endorsed, or supported by Bungie. Destiny 2 is a trademark of Bungie, Inc.</p>
+
+  <p class="note">Built with Bungie's public API. This page will be updated when the connector is ready.</p>
+</main>
+</body>
+</html>
